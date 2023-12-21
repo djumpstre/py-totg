@@ -8,7 +8,8 @@ The used cpp source code for `TOTG` comes from the [tobiaskunz/trajectories](htt
 Prerequisites:
 ```bash
 # 1. Pybind11
-pip3 install pybind11
+# make sure that the pybind11 is installed in the global side_pacakges
+pip3 install pybind11[global]
 # 2. Eigen
 sudo apt install libeigen3-dev
 ``` 

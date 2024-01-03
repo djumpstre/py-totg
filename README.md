@@ -11,7 +11,7 @@ Prerequisites:
 # make sure that the pybind11 is installed in the global side_pacakges
 pip3 install pybind11[global]
 # 2. Eigen
-sudo apt install libeigen3-dev
+sudo apt install libeigen3-dev cmake
 ``` 
 
 Build:
@@ -25,4 +25,10 @@ make
 Install:
 ```bash
 pip3 install . 
+```
+
+Optional:
+If you are using it in the container, you need to check if the python header is installed, for building. to install it:
+```
+sudo apt install python3-dev
 ```
